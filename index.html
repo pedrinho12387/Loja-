@@ -1,104 +1,22 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Minha Loja Online</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Site de Compras</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Cabeçalho -->
-    <header>
-        <div class="container">
-            <h1>Minha Loja Online</h1>
-            <input type="text" id="search" placeholder="Buscar produtos...">
-        </div>
-    </header>
+  <div class="produto">
+    <h1>Produto Exemplo</h1>
+    <p>Preço: R$ 99,99</p>
+    <button id="botao-comprar">Comprar</button>
+  </div>
 
-    <!-- Seção de Produtos -->
-    <main>
-        <section id="products">
-            <!-- Produto 1 -->
-            <div class="product-card">
-                <img src="data:image/jpeg;base64,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" 
-                <p class="description">Descrição do Produto 1</p>
-                <p class="price">R$ 100,00</p>
-                <p class="shipping">Frete grátis</p>
-                <button>comprar</button>
-            </div>
+  <div id="mensagem" class="mensagem-oculta">
+    Produto adicionado ao carrinho!
+  </div>
 
-            <!-- Produto 2 -->
-            <div class="product-card">
-                <img src="produto2.jpg" alt="Produto 2">
-                <h3>Produto 2</h3>
-                <p class="description">Descrição do Produto 2</p>
-                <p class="price">R$ 150,00</p>
-                <p class="shipping">Frete grátis</p>
-            </div>
-
-            <!-- Produto 3 -->
-            <div class="product-card">
-                <img src="produto3.jpg" alt="Produto 3">
-                <h3>Produto 3</h3>
-                <p class="description">Descrição do Produto 3</p>
-                <p class="price">R$ 200,00</p>
-                <p class="shipping">Frete grátis</p>
-            </div>
-
-            <!-- Produto 4 -->
-            <div class="product-card">
-                <img src="produto4.jpg" alt="Produto 4">
-                <h3>Produto 4</h3>
-                <p class="description">Descrição do Produto 4</p>
-                <p class="price">R$ 250,00</p>
-                <p class="shipping">Frete grátis</p>
-            </div>
-
-            <!-- Produto 5 -->
-            <div class="product-card">
-                <img src="produto5.jpg" alt="Produto 5">
-                <h3>Produto 5</h3>
-                <p class="description">Descrição do Produto 5</p>
-                <p class="price">R$ 300,00</p>
-                <p class="shipping">Frete grátis</p>
-            </div>
-
-            <!-- Produto 6 -->
-            <div class="product-card">
-                <img src="produto6.jpg" alt="Produto 6">
-                <h3>Produto 6</h3>
-                <p class="description">Descrição do Produto 6</p>
-                <p class="price">R$ 350,00</p>
-                <p class="shipping">Frete grátis</p>
-            </div>
-
-            <!-- Produto 7 -->
-            <div class="product-card">
-                <img src="produto7.jpg" alt="Produto 7">
-                <h3>Produto 7</h3>
-                <p class="description">Descrição do Produto 7</p>
-                <p class="price">R$ 400,00</p>
-                <p class="shipping">Frete grátis</p>
-            </div>
-
-            <!-- Produto 8 -->
-            <div class="product-card">
-                <img src="produto8.jpg" alt="Produto 8">
-                <h3>Produto 8</h3>
-                <p class="description">Descrição do Produto 8</p>
-                <p class="price">R$ 450,00</p>
-                <p class="shipping">Frete grátis</p>
-            </div>
-        </section>
-    </main>
-
-    <!-- Rodapé -->
-    <footer>
-        <div class="footer-container">
-            <p>&copy; 2024 Minha Loja Online - Todos os direitos reservados.</p>
-        </div>
-    </footer>
-
-    <script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
